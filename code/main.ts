@@ -10,7 +10,7 @@ basic.forever(function () {
     makerbit.clearLcd1602()
     makerbit.setLcdBacklight(LcdBacklight.On)
     moisture = pins.analogReadPin(AnalogPin.P1)
-    brightness = pins.analogReadPin(AnalogPin.P4)
+    brightness = pins.analogReadPin(AnalogPin.P2)
     makerbit.showStringOnLcd1602("moisture:", makerbit.position1602(LcdPosition1602.Pos1), 10, TextOption.AlignLeft)
     makerbit.showStringOnLcd1602("" + (moisture), makerbit.position1602(LcdPosition1602.Pos11), 5, TextOption.AlignLeft)
     makerbit.showStringOnLcd1602("brightness:", makerbit.position1602(LcdPosition1602.Pos17), 12, TextOption.AlignLeft)
